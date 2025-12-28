@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bot RP — Legal</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5}
+    header{margin-bottom:24px}
+    a{color:inherit}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:12px 0}
+    small{color:#6b7280}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bot RP — Documents légaux</h1>
+    <p>Cette page regroupe la Privacy Policy et les Terms of Service du bot Discord.</p>
+    <small>Dernière mise à jour : <span id="d"></span></small>
+  </header>
+
+  <div class="card">
+    <h2>Privacy Policy</h2>
+    <p><a href="./privacy.html">Lire la Privacy Policy</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Terms of Service</h2>
+    <p><a href="./terms.html">Lire les Terms of Service</a></p>
+  </div>
+
+  <script>
+    document.getElementById('d').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
